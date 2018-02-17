@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #daad86;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: 'Noto Sans', sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+img {
+  max-width: 200px;
+}
+
+ul > li {
+  list-style: none;
+  display: inline-block;
+}
+
+ul > li:not(:last-child) {
+  margin-right:  15px;
+}
+
+a,
+a:visited {
+  color: #98dafc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b56969;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  align-items: center;
+  background-color: #e6cf8b;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.header  a {
+  color: #22264b;
+}
+
+.header a:hover {
+  color: #b56969;
+}
+
+.footer {
+  background-color: #312c32;
+  bottom: 0;
+  font-size: 0.7em;
+  padding: 15px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.avatar {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 4px 0 rgba(51, 51, 51, 0.1);
+  -moz-box-shadow: 0px 0px 4px 0 rgba(51, 51, 51, 0.1);
+  box-shadow: 0px 0px 4px 0 rgba(51, 51, 51, 0.1);
+}
+
+.main-content {
+  color: #312c32;
+  margin: 20px auto 150px;
+  position: relative;
+  width: 90%;
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    width: 60%;
+  }
+}
