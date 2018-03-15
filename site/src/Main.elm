@@ -1,17 +1,20 @@
-module Main exposing (..)
+module About exposing (..)
 
 import Html exposing (..)
 import Html.Attributes exposing (..)
 
-import Skeleton
+import Skeleton as S
+import Card
 
 main : Html msg
 main =
-    Skeleton.skeleton "About"
+    S.skeleton "About"
         [ avatar
         , content
+        , Card.card
         ]
 
+(=>) : a -> b -> ( a, b )
 (=>) = (,)
 
 avatar : Html msg
