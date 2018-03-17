@@ -1,0 +1,7 @@
+var _user$project$Playground$escapeHearth = F2(
+	function (velocity, speed) {
+		return (_elm_lang$core$Native_Utils.cmp(velocity, 11.186) > 0) ? 'Godspeed' : (_elm_lang$core$Native_Utils.eq(speed, 7.67) ? 'Stay in orbit' : 'Come back');
+	});
+var _user$project$Playground$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		A2(_user$project$Playground$escapeHearth, 11.2, 7.2)));
