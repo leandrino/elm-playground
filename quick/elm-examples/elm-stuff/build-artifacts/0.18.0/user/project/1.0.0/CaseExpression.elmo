@@ -1,0 +1,45 @@
+var _user$project$CaseExpression$weekday = function (dayInNumber) {
+	var _p0 = dayInNumber;
+	switch (_p0) {
+		case 0:
+			return 'Sunday';
+		case 1:
+			return 'Monday';
+		case 2:
+			return 'Tuesday';
+		case 3:
+			return 'Wednesday';
+		case 4:
+			return 'Thursday';
+		case 5:
+			return 'Friday';
+		case 6:
+			return 'Saturday';
+		default:
+			return 'Unknown day';
+	}
+};
+var _user$project$CaseExpression$hashtag = function (dayInNumber) {
+	var _p1 = _user$project$CaseExpression$weekday(dayInNumber);
+	switch (_p1) {
+		case 'Sunday':
+			return '#SinDay';
+		case 'Monday':
+			return '#MondayBlues';
+		case 'Tuesday':
+			return '#TakeMeBackTuesday';
+		case 'Wednesday':
+			return 'HumpDay';
+		case 'Thursday':
+			return '#ThrowbackThursday';
+		case 'Friday':
+			return '#FlashbackFriday';
+		case 'Saturday':
+			return '#Caturday';
+		default:
+			return '#Whatever';
+	}
+};
+var _user$project$CaseExpression$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		_user$project$CaseExpression$hashtag(4)));
