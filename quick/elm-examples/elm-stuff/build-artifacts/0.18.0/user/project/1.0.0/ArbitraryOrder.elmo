@@ -1,0 +1,62 @@
+var _user$project$ArbitraryOrder$evilmetter = F2(
+	function (character1, character2) {
+		var _p0 = {ctor: '_Tuple2', _0: character1, _1: character2};
+		_v0_6:
+		do {
+			if (_p0.ctor === '_Tuple2') {
+				switch (_p0._0) {
+					case 'Joffrey':
+						switch (_p0._1) {
+							case 'Ramsay':
+								return _elm_lang$core$Basics$LT;
+							case 'Night King':
+								return _elm_lang$core$Basics$LT;
+							default:
+								break _v0_6;
+						}
+					case 'Ramsay':
+						switch (_p0._1) {
+							case 'Joffrey':
+								return _elm_lang$core$Basics$GT;
+							case 'Night King':
+								return _elm_lang$core$Basics$LT;
+							default:
+								break _v0_6;
+						}
+					case 'Night King':
+						switch (_p0._1) {
+							case 'Joffrey':
+								return _elm_lang$core$Basics$GT;
+							case 'Ramsay':
+								return _elm_lang$core$Basics$GT;
+							default:
+								break _v0_6;
+						}
+					default:
+						break _v0_6;
+				}
+			} else {
+				break _v0_6;
+			}
+		} while(false);
+		return _elm_lang$core$Basics$GT;
+	});
+var _user$project$ArbitraryOrder$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		_elm_lang$core$Basics$toString(
+			A2(
+				_elm_lang$core$List$sortWith,
+				_user$project$ArbitraryOrder$evilmetter,
+				{
+					ctor: '::',
+					_0: 'Night King',
+					_1: {
+						ctor: '::',
+						_0: 'Joffrey',
+						_1: {
+							ctor: '::',
+							_0: 'Ramsay',
+							_1: {ctor: '[]'}
+						}
+					}
+				}))));
