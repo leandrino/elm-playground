@@ -11,7 +11,7 @@ remove a b =
     a - b
 
 
-mulltiply c d =
+multiply c d =
     c * d
 
 

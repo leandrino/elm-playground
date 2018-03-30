@@ -1,0 +1,34 @@
+var _user$project$MapList$guitars = {
+	ctor: '::',
+	_0: 'Gibson',
+	_1: {
+		ctor: '::',
+		_0: 'Fender',
+		_1: {
+			ctor: '::',
+			_0: 'MusicMan',
+			_1: {ctor: '[]'}
+		}
+	}
+};
+var _user$project$MapList$lengthGuitars = _elm_lang$core$Basics$toString(
+	A2(_elm_lang$core$List$map, _elm_lang$core$String$length, _user$project$MapList$guitars));
+var _user$project$MapList$fender = _elm_lang$core$Basics$toString(
+	A2(
+		_elm_lang$core$List$map,
+		function (x) {
+			return A2(_elm_lang$core$String$contains, 'Fender', x);
+		},
+		_user$project$MapList$guitars));
+var _user$project$MapList$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		_elm_lang$core$Basics$toString(
+			{
+				ctor: '::',
+				_0: _user$project$MapList$fender,
+				_1: {
+					ctor: '::',
+					_0: _user$project$MapList$lengthGuitars,
+					_1: {ctor: '[]'}
+				}
+			})));

@@ -1,0 +1,33 @@
+var _user$project$FoldingList$sumList = F2(
+	function (x, a) {
+		return x + a;
+	});
+var _user$project$FoldingList$whateverList = {
+	ctor: '::',
+	_0: 'tomato',
+	_1: {
+		ctor: '::',
+		_0: 'banana',
+		_1: {
+			ctor: '::',
+			_0: 'lemon',
+			_1: {
+				ctor: '::',
+				_0: 'orange',
+				_1: {
+					ctor: '::',
+					_0: 'apple',
+					_1: {ctor: '[]'}
+				}
+			}
+		}
+	}
+};
+var _user$project$FoldingList$countLetters = _elm_lang$core$Basics$toString(
+	A3(
+		_elm_lang$core$List$foldl,
+		_user$project$FoldingList$sumList,
+		0,
+		A2(_elm_lang$core$List$map, _elm_lang$core$String$length, _user$project$FoldingList$whateverList)));
+var _user$project$FoldingList$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(_user$project$FoldingList$countLetters));
