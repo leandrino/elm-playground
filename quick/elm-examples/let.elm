@@ -2,7 +2,7 @@ module LetWithElm exposing (..)
 
 import Html
 
-
+escapeEarth : Float -> Float -> String -> String
 escapeEarth velocity speed fuelStatus =
     let
         escapeVelocityInKmPerSec =
@@ -24,7 +24,7 @@ escapeEarth velocity speed fuelStatus =
         else
             whereToLand fuelStatus
 
-
+main : Html.Html msg
 main =
     escapeEarth 10 6.7 "low"
         |> Html.text

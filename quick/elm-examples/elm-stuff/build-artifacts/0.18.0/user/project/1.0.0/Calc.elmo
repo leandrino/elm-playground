@@ -6,6 +6,10 @@ var _user$project$Calc$multiply = F2(
 	function (c, d) {
 		return c * d;
 	});
+var _user$project$Calc$remove = F2(
+	function (a, b) {
+		return a - b;
+	});
 var _user$project$Calc$add = F2(
 	function (a, b) {
 		return a + b;

@@ -2,6 +2,7 @@ module CaseExpression exposing (..)
 
 import Html
 
+weekday : Int -> String
 weekday dayInNumber =
     case dayInNumber of
         0 ->
@@ -28,6 +29,7 @@ weekday dayInNumber =
         _ ->
             "Unknown day"
 
+hashtag : Int -> String
 hashtag dayInNumber =
     case weekday dayInNumber of
         "Sunday" ->
@@ -47,8 +49,7 @@ hashtag dayInNumber =
         _ ->
             "#Whatever"
 
-
+main : Html.Html msg
 main =
     hashtag 5
         |> Html.text
-

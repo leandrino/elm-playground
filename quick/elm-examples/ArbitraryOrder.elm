@@ -2,6 +2,7 @@ module ArbitraryOrder exposing (..)
 
 import Html
 
+evilmetter : String -> String -> Order
 evilmetter character1 character2 =
     case (character1, character2) of
         ( "Joffrey", "Ramsay" ) ->
@@ -25,7 +26,7 @@ evilmetter character1 character2 =
         _ ->
             GT
 
-
+main : Html.Html msg
 main =
     [ "Night King", "Joffrey", "Ramsay" ]
         |> List.sortWith evilmetter
